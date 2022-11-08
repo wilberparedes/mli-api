@@ -30,7 +30,7 @@ const getItem = async (id: any): Promise<ResponseItemWithDescription | undefined
   }
   try {
     const response: AxiosResponse<Item> = await axios.get(`${config.url_api_meli}/items/${id}`)
-    const responseDescription: AxiosResponse<Description> = await axios.get(`${config.url_api_meli}/${id}/description`)
+    const responseDescription: AxiosResponse<Description> = await axios.get(`${config.url_api_meli}/items/${id}/description`)
     return {
       author: {
         name: 'Wilber',

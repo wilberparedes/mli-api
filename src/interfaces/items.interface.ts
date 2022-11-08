@@ -23,6 +23,7 @@ export interface ItemFormat {
   price: Price
   title: string
   address: Address
+  sold_quantity: number
 }
 
 export interface Item {
