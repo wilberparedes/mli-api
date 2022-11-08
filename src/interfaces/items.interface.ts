@@ -8,6 +8,13 @@ export interface Price {
   decimals: number
 }
 
+export interface Address {
+  city_id: null | string
+  city_name: string
+  state_id: string
+  state_name: string
+}
+
 export interface ItemFormat {
   condition: string
   free_shipping: boolean
@@ -15,6 +22,7 @@ export interface ItemFormat {
   picture: string
   price: Price
   title: string
+  address: Address
 }
 
 export interface Item {
@@ -26,6 +34,7 @@ export interface Item {
   sold_quantity: number
   thumbnail: string
   title: string
+  address: Address
 }
 
 export interface ValueAvailableFilter {

@@ -17,7 +17,8 @@ export const formatItem = (item: Item): ItemFormat => {
     },
     picture: item.thumbnail,
     condition: item.condition,
-    free_shipping: Boolean(item?.shipping?.free_shipping)
+    free_shipping: Boolean(item?.shipping?.free_shipping),
+    address: item.address
   }
 }
 
